@@ -1,0 +1,1 @@
+This is APP aime to help teacher to calculate student't perfomance whether they failed or passed dependeng on their Grades.
