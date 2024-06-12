@@ -59,14 +59,23 @@ function printName(winningplayer){
 // object contractor is declared as variable
 
 class player {
-    constructor(name, marker) {
+    constructor(name, marker, age) {
         this.name = name; // we are using this key word to refer to the properties we want our instances to rely one.
         this.marker = marker;
+        this.age = age;
+        // our last exerceise codes:
+        this.callAge = function() {
+            console.log(this.age);
+        }
     }
 };
 
-const player1 = new player('Enock', 'X');
-const player2 = new player('Robben', 'R');
+const player1 = new player('Enock', 'X', 23);
+const player2 = new player('Robben', 'R', 24);
 // we can create as many as objects we want as long we have the main controctor we are referring too.
 
 console.log((player1.name));  // You should see Enock.
+
+//  We are closing this page. let create a new prority called age and give it value of 23, after add a function in that consitructor that call this property when function called.
+
+player1.callAge(); // this logs, 23
